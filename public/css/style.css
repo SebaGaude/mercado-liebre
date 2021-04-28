@@ -28,6 +28,14 @@ main {
     margin: 1%;
 }
 
+/* intento de hacer la animacion del giro del camion. hecha una transicion para mismo efecto */
+/* @keyframes giro-camion {
+    25% { transform: rotateZ(90deg);}
+    50% { transform: rotateZ(180deg);}
+    75% { transform: rotateZ(270deg);}
+    100% { transform: rotateZ(360deg);}
+} */
+
 @keyframes brillo {
     0% { opacity: 0%;}
     25% {transform:rotate(50px); opacity: 100%;}
@@ -76,12 +84,25 @@ img {
     position: relative;
 }
 
+ .articulo:hover .descripciones {
+    display: block;
+} 
+
+.articulo:hover .camion i{
+    transform: rotate(-90deg);
+}
+.articulo:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    
+}
+
 .articulo {
     width: 100%;
     border: solid 1px #ebebeb;
     margin: 0px 5px 0px 5px;
     background-color: white;
     margin-bottom: 3%;
+    transition: box-shadow 0.5s;
     
 }
 
@@ -123,6 +144,8 @@ img {
     margin-bottom: 1%;
     display: none;
 }
+
+
 
 footer {
     text-align: center;
@@ -170,6 +193,7 @@ footer {
 
 .pie-resaltado{
     font-size: 14px;
+    font-weight: bold;
 }
 
 .copyright {
@@ -180,6 +204,7 @@ footer {
     color: #1259c3;
     width: 2em;
 }
+
 
 .crea-formulario {
     padding: 20px 15px;
@@ -232,6 +257,10 @@ footer {
     color: #FFF;
     font-style: normal;
     text-align: center;
+    transition: all 0.8s;
+}
+.boton-ingreso:hover {
+background-color: #0022AA;
 }
 
 .navegador-registro {
@@ -259,11 +288,12 @@ footer {
 
 /* tablets */
 @media (min-width:371px){
-    .descripciones {
+    /* descripciones bloqueadas que solo surgen en el hover del articulo */
+     /* .descripciones {
         display: block
-    }
+    }   */
     .articulo{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        /* box-shadow: 0px 0px 10px rgb(100, 100, 100); */
         width: 45%;
     }
     .burger-menu {
@@ -337,4 +367,15 @@ footer {
         
     }
     
+    .apartado-pie {
+        margin: 1%;
+    }
+    .pie-general {
+        display: flex;
+        text-align: center;
+        margin-top: 0%;
+    }
+    .copyright {
+        margin: 2% 1%;
+    }
 }

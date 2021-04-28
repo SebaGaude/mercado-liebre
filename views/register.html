@@ -53,20 +53,20 @@
         <form action="/" method="GET" class="crea-formulario">
             <div class="control-formulario">
                 <label for="nombreYapellido">Nombre y Apellido</label>
-                <input type="text" name="nombreYapellido" class="formulario" minlength="4">
-                <span class ="validacion" >Debes ingresar tu nombre completo </span>
+                <input type="text" name="nombreYapellido" class="formulario" minlength="4" required>
+                <!-- <span class ="validacion" >Debes ingresar tu nombre completo </span> -->
             </div>
             <div class="control-formulario">
                 <label for="nombreUsuario">Nombre de usuari@</label>
-                <input type="text" name="nombreUsuario" class="formulario">
+                <input type="text" name="nombreUsuario" class="formulario" required>
             </div>
             <div class="control-formulario">
                 <label for="fechaNacimiento">Fecha de nacimiento</label>
-                <input type="date" name="fecha" class="formulario">
+                <input type="date" name="fecha" class="formulario" required>
             </div>
             <div class="control-formulario">
                 <label for="domicilio">Domicilio</label>
-                <input type="text" name="domicilio" class="formulario">
+                <input type="text" name="domicilio" class="formulario" required>
             </div>
             <div class="control-formulario">
                 <label for="perfil">Perfil de usuario</label>
@@ -87,41 +87,50 @@
             </div>
             <div class="control-formulario">
                 <label for="password">Contraseña</label>
-                <input type="password" name="password" class="formulario" minlength="8">
-                <span class="validacion">Tu clave es demasiado corta. Deben ser al menos 8 caracteres</span>
+                <input type="password" name="password" class="formulario" minlength="8" required>
+                <!-- <span class="validacion">Tu clave es demasiado corta. Deben ser al menos 8 caracteres</span> -->
             </div>
             <div class="control-formulario">
                 <label for="confirmar-password">Confirmar contraseña</label>
-                <input type="password" name="confirmar-password" class="formulario" minlength="8">
-                <span class="validacion"></span>
+                <input type="password" name="confirmar-password" class="formulario" minlength="8" required>
+                <!-- <span class="validacion"></span> -->
             </div>
             <button type="submit" class="boton">Enviar</button>
             <button type="reset" class="boton">Cancelar</button>
         </form>
     </main>
     <footer>
-        <section>
-            <article class="pie-general">
+        <section class="pie-general">
+            <article class="apartado-pie">
                 <i class="fas fa-credit-card fa-2x"></i>
-                <p class="pie-resaltado"><strong>Pagá con tarjeta o en efectivo</strong>
-                    <br>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. Y
+                <p class="pie-resaltado">Pagá con tarjeta o en efectivo</p>
+                <p>
+                    Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. Y
                     siempre es seguro!
                 </p>
-                <br>
+            </article>
+
+            <article class="apartado-pie">
                 <i class="fas fa-gift fa-2x"></i>
-                <p class="pie-resaltado"><strong>Envío gratis desde $2500</strong>
-                    <br>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un
+                <p class="pie-resaltado">Envío gratis desde $2500</p>
+                <p>
+                    Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un
                     beneficio de Mercado Puntos
                 </p>
-                <br>
+            </article>
+
+            <article class="apartado-pie">
                 <i class="fas fa-user-shield fa-2x"></i>
                 <p class="pie-resaltado"><strong>Seguridad, de principio a fin.</strong>
-                    <br>No te gusta? Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque siempre estas
+                <p>
+                    No te gusta? Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque siempre estas
                     protegid@
                 </p>
-                <br>
-                <p class="copyright">Copyright @1999-2020 Mercado Liebre S.R.L.</strong></p>
             </article>
+
+        </section>
+        <section>
+            <p class="copyright">Copyright @1999-2020 Mercado Liebre S.R.L.</p>
         </section>
     </footer>
 </body>
