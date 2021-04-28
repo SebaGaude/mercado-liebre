@@ -85,12 +85,18 @@ img {
 }
 
  .articulo:hover .descripciones {
-    display: block;
+    /* display: block; */
+    height: auto;
+    width: auto;
+    opacity: 1;
+    transition: all 1s;
 } 
 
 .articulo:hover .camion i{
-    transform: rotate(-90deg);
+    transform: rotate(-360deg);
+    transition: all 1s;
 }
+
 .articulo:hover {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
     
@@ -142,7 +148,11 @@ img {
     margin-left: 2%;        
     margin-top: 4%;
     margin-bottom: 1%;
-    display: none;
+    /* display: none;  esto no sirve para la animacion de su aparicion al hover*/
+    height: 0;
+    width: 0;
+    opacity: 0;
+   
 }
 
 
