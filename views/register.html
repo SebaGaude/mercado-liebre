@@ -20,7 +20,9 @@
                 <a href="/"><img src="/img/logo-mercado-liebre.svg" alt="logo"></a>
             </div>
             <div class="barra-busqueda">
-                <input type="text" value="Buscar productos, marcas, etc.." class="input-busqueda">
+                <form action="/busqueda" method="GET">
+                    <input type="text" placeholder="Buscar productos, marcas, etc.." class="input-busqueda">
+                </form>
                 <i class="fas fa-search"></i>
             </div>
             <div class="cuotas-tarjeta">
@@ -79,7 +81,7 @@
                 <label><input type="checkbox" name="intereses" value="hogar"> Hogar</label>
                 <label><input type="checkbox" name="intereses" value="jugueteria"> Juguetería</label>
                 <label><input type="checkbox" name="intereses" value="vida-sana"> Vida sana</label>
-                <label><input type="checkbox" name="intereses" value="electro">     Electro</label>
+                <label><input type="checkbox" name="intereses" value="electro"> Electro</label>
             </div>
             <div class="control-formulario">
                 <label for="foto">Foto de usuario</label>

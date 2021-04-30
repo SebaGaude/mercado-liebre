@@ -20,7 +20,9 @@
                 <a href="/"><img src="/img/logo-mercado-liebre.svg" alt="logo"></a>
             </div>
             <div class="barra-busqueda">
-                <input type="text" value="Buscar productos, marcas, etc.." class="input-busqueda">
+                <form action="/busqueda" method="GET">
+                    <input type="text" placeholder="Buscar productos, marcas, etc.." class="input-busqueda">
+                </form>
                 <i class="fas fa-search"></i>
             </div>
             <div class="cuotas-tarjeta">
@@ -46,15 +48,20 @@
         </div>
     </header>
     <main>
+        <div class="bienvenida-login">
+            <h3 class="cartel-bienvenida">
+                Es bueno verte de nuevo por aqui!
+            </h3>
+        </div>
         <section class="formulario-ingreso">
-            <form action="/" method="GET" >
+            <form action="/" method="GET">
                 <div class="control-ingreso">
                     <label for="nombreUsuario"></label>
-                    <input type="text" name="nombreUsuario" class="ingreso" placeholder="Nombre de usuario">
+                    <input type="text" name="nombreUsuario" class="ingreso" placeholder="Nombre de usuario" required>
                 </div>
                 <div class="control-ingreso">
                     <label for="password"></label>
-                    <input type="password" name="password" class="ingreso" placeholder="Elegí tu contraseña">
+                    <input type="password" name="password" class="ingreso" placeholder="Elegí tu contraseña" required>
                 </div>
                 <button type="submit" class="boton-ingreso">Enviar</button>
             </form>

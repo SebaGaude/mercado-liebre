@@ -28,6 +28,11 @@ main {
     margin: 1%;
 }
 
+.banner-img {
+    margin-bottom: 1%;
+}
+
+
 /* intento de hacer la animacion del giro del camion. hecha una transicion para mismo efecto */
 /* @keyframes giro-camion {
     25% { transform: rotateZ(90deg);}
@@ -35,6 +40,14 @@ main {
     75% { transform: rotateZ(270deg);}
     100% { transform: rotateZ(360deg);}
 } */
+
+@keyframes bienvenida {
+    25% { opacity: 25%;}
+    50% { opacity: 50%;}
+    75% { opacity: 75%;}
+    100% {opacity: 100%;}
+
+}
 
 @keyframes brillo {
     0% { opacity: 0%;}
@@ -123,6 +136,7 @@ img {
     font-size: 24px;
     margin-left: 5%;
     padding: 1%;
+    transition: all 1s;
 }
 
 .precios {
@@ -211,7 +225,18 @@ footer {
     color: #1259c3;
     width: 2em;
 }
-
+.bienvenida-login {
+    text-align: center;
+}
+.bienvenida-login h3 {
+    opacity: 80%;
+    font-size: 13px;
+    font-family: 'Roboto';
+    font-weight: normal;
+    margin: 1%;
+    justify-content: center;
+    animation: bienvenida 2s 2;
+}
 
 .crea-formulario {
     padding: 20px 15px;
