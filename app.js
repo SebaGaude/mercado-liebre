@@ -17,5 +17,5 @@ app.get("/login", (req, res)=>{
     res.sendFile(path.resolve(__dirname, "./views/login.html"));
 });
 
-app.listen(3020, ()=> console.log("Corriendo server 3020"));
+app.listen(process.env.PORT || 3020, ()=> console.log("Corriendo server 3020"));
 
